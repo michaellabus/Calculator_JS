@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        .calculator {
+            width: 300px;
+	    height: 200px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        
+        button {
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #f0f0f0;
+        }
+        
+        .operation-buttons {
+            width: calc(50% - 5px);
+            float: left;
+        }
+        
+        .number-buttons {
+            width: calc(50% - 5px);
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <button id="clear-btn">C</button>
+        <button id="delete-btn">DEL</button>
+        <button id="equals-btn">=</button>
+        <div class="operation-buttons">
+            <button id="add-btn">+</button>
+            <button id="subtract-btn">-</button>
+            <button id="multiply-btn">*</button>
+            <button id="divide-btn">/</button>
+        </div>
+        <div class="number-buttons">
+            <button id="zero-btn">0</button>
+            <button id="one-btn">1</button>
+            <button id="two-btn">2</button>
+            <button id="three-btn">3</button>
+            <button id="four-btn">4</button>
+            <button id="five-btn">5</button>
+            <button id="six-btn">6</button>
+            <button id="seven-btn">7</button>
+            <button id="eight-btn">8</button>
+            <button id="nine-btn">9</button>
+            <button id="decimal-btn">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
